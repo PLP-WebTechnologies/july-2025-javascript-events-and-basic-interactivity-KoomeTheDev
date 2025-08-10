@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweet Treats Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sweet Treats Bakery</h1>
+    <button id="mode-toggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <section id="menu-section">
+    <h2>Our Delicious Menu</h2>
+    <div class="menu-item" data-name="Chocolate Cake">🍰 Chocolate Cake</div>
+    <div class="menu-item" data-name="Blueberry Muffin">🧁 Blueberry Muffin</div>
+    <div class="menu-item" data-name="Croissant">🥐 Croissant</div>
+    <div class="menu-item" data-name="Macaron">🍬 Macaron</div>
+    <p>Items in Cart: <span id="cart-count">0</span></p>
+  </section>
+
+  <section id="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">Do you offer gluten-free options?</button>
+      <div class="faq-answer hidden">Yes! We have several gluten-free treats available daily.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can I order custom cakes?</button>
+      <div class="faq-answer hidden">Absolutely, just contact us with your request!</div>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" name="name" />
+        <span class="error" id="name-error"></span>
+      </label><br/>
+      <label>
+        Email:
+        <input type="email" id="email" name="email" />
+        <span class="error" id="email-error"></span>
+      </label><br/>
+      <label>
+        Message:
+        <textarea id="message" name="message"></textarea>
+        <span class="error" id="message-error"></span>
+      </label><br/>
+      <button type="submit">Send Message</button>
+      <div id="form-success" class="success-message"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

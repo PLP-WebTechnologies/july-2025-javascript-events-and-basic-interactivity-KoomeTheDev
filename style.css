@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #5a2a0c;
+  margin: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #2b1a0f;
+  color: #f5e1d3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #d97706;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b45309;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #d97706;
+  border-radius: 6px;
+  margin: 5px 0;
+  width: 200px;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #fde68a;
+}
+
+.faq-answer {
+  margin-left: 20px;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-left: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
